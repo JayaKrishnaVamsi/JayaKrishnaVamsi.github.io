@@ -1,1 +1,0 @@
-# JayaKrishnaVamsi.github.io
