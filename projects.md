@@ -1,18 +1,10 @@
 ---
-layout: page
-title: "Projects"
-permalink: /projects/
+layout: default
+title: Projects
 ---
 
-# 🚀 Projects  
+# Projects
 
-### Netflix Data Analysis  
-Explored unsupervised learning (clustering, PCA, association mining) on Netflix dataset.  
-
-### Retail Inventory Optimization  
-Proposed AI-driven optimization & collaborative dark store models.  
-
-### Case Studies  
-Worked on AI adoption strategies and business sustainability cases.  
-
-[⬅ Back to Home](/)
+Here are some of the projects I’ve worked on:
+- 🚀 Project 1
+- 📊 Project 2

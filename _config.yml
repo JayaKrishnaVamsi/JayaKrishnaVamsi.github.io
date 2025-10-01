@@ -1,15 +1,16 @@
-title: "Jaya Krishna Vamsi"
+title: "Home"
 description: "Personal site to showcase projects, interests, and blogs"
-author: "Jaya Krishna Vamsi"
-email: "jayakrishnavamsi4@gmail.com"
-github_username: JayaKrishnaVamsi
-linkedin_username: jaya-krishna-vamsi-sarab-6b4a77220
+baseurl: "" # keep empty for user.github.io
+url: "https://JayaKrishnaVamsi.github.io"
 
-theme: minima   # GitHub-supported theme
+nav:
+  - name: "Home"
+    link: /
+  - name: "Projects"
+    link: /projects/
+  - name: "Hobbies"
+    link: /interests/
+  - name: "Blog"
+    link: /blog/
 
-# Navigation menu
-header_pages:
-  - index.md
-  - projects.md
-  - interests.md
-  - blog.md
+theme: null   # disable default themes

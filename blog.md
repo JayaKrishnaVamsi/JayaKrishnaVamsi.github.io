@@ -1,9 +1,8 @@
 ---
-layout: home
-title: "Blog"
-permalink: /blog/
+layout: default
+title: Blog
 ---
 
-# ✍️ Blog  
+# Blog
 
-Welcome to my blog! Posts appear below.
+Coming soon 🚧
