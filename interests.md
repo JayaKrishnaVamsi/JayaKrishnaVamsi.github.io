@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Hobbies
+title: Interests
+permalink: /interests/
 ---
 
 # Hobbies
