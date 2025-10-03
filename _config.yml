@@ -12,5 +12,11 @@ nav:
     link: /interests/
   - name: "Blog"
     link: /blog/
+  - name: "Skills"
+    link: /skills/
 
 theme: null   # disable default themes
+collections:
+  interests:
+    output: true   # ensures Jekyll creates HTML pages for each file
+    permalink: /interests/:name/

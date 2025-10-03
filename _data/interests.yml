@@ -1,0 +1,8 @@
+- name: Chess
+  link: /interests/chess/
+  color: "#ff9999"
+  image: "/assets/images/chess.png"
+- name: Reading
+  link: /interests/reading/
+  color: "#c299ff"
+  image: "/assets/images/books.png"
