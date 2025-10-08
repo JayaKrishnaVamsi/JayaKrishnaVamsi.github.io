@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: interest
 title: 4 Knights
 ---
 

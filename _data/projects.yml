@@ -1,0 +1,7 @@
+- name: Water Quality Prediction
+  description: Machine learning model to predict potability of water based on physicochemical parameters
+  github: https://github.com/JayaKrishnaVamsi/Water-Quality-Potability
+- name: Indian Personal Finance & Spending Habits
+  description: Analysis of spending habits of a vast number of Indian people through Hadoop Framework
+  github: https://github.com/JayaKrishnaVamsi/BigDataAnalyticsProject
+  page: /projects/big-data-analytics

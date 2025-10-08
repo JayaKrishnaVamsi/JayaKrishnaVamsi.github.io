@@ -3,7 +3,7 @@ layout: interest
 title: Chess
 icon: ♟
 image: /assets/images/chess.png
-description: Strategies, openings, and tournaments I follow.
+description: Of Tactics and more tactics!
 permalink: /interests/chess/
 ---
 

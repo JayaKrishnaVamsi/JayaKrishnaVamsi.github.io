@@ -25,4 +25,11 @@ Explore the sections below:
     <a href="/interests/art/photography" class="back-button">View Pics</a>
   </div>
 
+  <div class="skill-card">
+    <img src="/assets/images/poems.png" alt="Poems">
+    <h3>Poems</h3>
+    <p>A few of my original poems, each with a personal touch.</p>
+    <a href="/interests/art/poems" class="back-button">Read Poems</a>
+  </div>
+
 </div>
