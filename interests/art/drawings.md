@@ -1,48 +1,47 @@
 ---
-layout: interest
+layout: default
 title: My Drawings
+description: A collection of my drawings rendered dynamically.
 permalink: /interests/art/drawings/
 ---
 
-# 🖌️ My Drawings
-
+# 🎨 My Drawings
 Click on any image to view in full size:
 
 <div class="gallery">
-  <a href="/assets/images/litwick.jpeg" data-lightbox="drawings" data-title="Litwick">
-    <img src="/assets/images/litwick.jpeg" alt="Litwick">
-  </a>
-  <a href="/assets/images/lampent.jpeg" data-lightbox="drawings" data-title="Lampent">
-    <img src="/assets/images/lampent.jpeg" alt="Lampent">
-  </a>
-  <a href="/assets/images/chandelure.jpeg" data-lightbox="drawings" data-title="Chandelure">
-    <img src="/assets/images/chandelure.jpeg" alt="Chandelure">
-  </a>
-  <a href="/assets/images/ampharos.jpg" data-lightbox="drawings" data-title="Ampharos">
-    <img src="/assets/images/ampharos.jpg" alt="Ampharos">
-  </a>
-  <a href="/assets/images/quilava.jpg" data-lightbox="drawings" data-title="Quilava">
-    <img src="/assets/images/quilava.jpg" alt="Quilava">
-  </a>
-  <a href="/assets/images/rapidash.jpg" data-lightbox="drawings" data-title="Rapidash">
-    <img src="/assets/images/rapidash.jpg" alt="Rapidash">
-  </a>
-  <a href="/assets/images/aggron.jpg" data-lightbox="drawings" data-title="Aggron">
-    <img src="/assets/images/aggron.jpg" alt="Aggron">
-  </a>
-  <a href="/assets/images/mcharx.jpg" data-lightbox="drawings" data-title="Mega Charizard X">
-    <img src="/assets/images/mcharx.jpg" alt="Mega Charizard X">
-  </a>
-  <a href="/assets/images/swellow.jpg" data-lightbox="drawings" data-title="Swellow">
-    <img src="/assets/images/swellow.jpg" alt="Swellow">
-  </a>
-  <a href="/assets/images/flygon.jpg" data-lightbox="drawings" data-title="Flygon">
-    <img src="/assets/images/flygon.jpg" alt="Flygon">
-  </a>
-  <a href="/assets/images/feraligatr.jpg" data-lightbox="drawings" data-title="Feraligatr">
-    <img src="/assets/images/feraligatr.jpg" alt="Feraligatr">
-  </a>
+  {% assign drawings = site.static_files | where_exp: "file", "file.path contains '/assets/images/drawings/'" %}
+  {% for image in drawings %}
+    <a href="{{ image.path }}" data-lightbox="drawings" data-title="{{ image.name | split: '.' | first | capitalize }}">
+      <img src="{{ image.path }}" alt="{{ image.name | split: '.' | first | capitalize }}">
+    </a>
+  {% endfor %}
 </div>
+
+<style>
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  justify-items: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+</style>
+
 
 <div class="back-button-wrapper">
   <a href="/interests/art" class="back-button">⬅ Back to Art</a>
